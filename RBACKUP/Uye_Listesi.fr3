@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.3.16" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="39025,5374193403" ReportOptions.Description.Text="" ReportOptions.LastChange="43205,7840514352" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frxBekleyen" DataSetName="frxBekleyen"/>
+    <item DataSet="frxECOkunan" DataSetName="frxECOkunan"/>
+    <item DataSet="frxECOkuyan" DataSetName="frxECOkuyan"/>
+    <item DataSet="frxKitap" DataSetName="frxKitap"/>
+    <item DataSet="frxKitap_Islem" DataSetName="frxKitap_Islem"/>
+    <item DataSet="frxKurum" DataSetName="frxKurum"/>
+    <item DataSet="frxRaporlar" DataSetName="frxRaporlar"/>
+    <item DataSet="frxUye" DataSetName="frxUye"/>
+    <item DataSet="frxUye_Islem" DataSetName="frxUye_Islem"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="139,84261" Left="0" Top="18,89765" Width="718,1107">
+      <TfrxMemoView Name="Memo21" Left="0" Top="0" Width="718,1107" Height="49,13389" Font.Charset="1" Font.Color="16711680" Font.Height="-32" Font.Name="tahoma" Font.Style="0" Frame.Color="128" Frame.Typ="8" Frame.Width="2" HAlign="haCenter" ParentFont="False" Text="Üye Listesi"/>
+      <TfrxMemoView Name="Memo24" Left="604,7248" Top="52,91342" Width="113,3859" Height="30,23624" Font.Charset="1" Font.Color="536870911" Font.Height="-12" Font.Name="tahoma" Font.Style="0" Frame.Color="128" Frame.Width="3" ParentFont="False" Text="Tarih: [Date]&#13;&#10;Saat: [Time]"/>
+      <TfrxMemoView Name="Memo27" Left="117,76376" Top="60,47248" Width="411,96877" Height="18,89765" DataSet="frxKurum" DataSetName="frxKurum" Font.Charset="1" Font.Color="-16777208" Font.Height="-12" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Okul: [frxKurum.&#34;KURUM_ADI&#34;]"/>
+      <TfrxMemoView Name="Memo28" Left="117,76376" Top="89,14966" Width="154,96073" Height="18,89765" DataSet="frxKurum" DataSetName="frxKurum" Font.Charset="1" Font.Color="-16777208" Font.Height="-12" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Yetkili: [frxKurum.&#34;YETKILI&#34;]"/>
+      <TfrxMemoView Name="Memo29" Left="275,50402" Top="89,14966" Width="253,22851" Height="18,89765" DataSet="frxKurum" DataSetName="frxKurum" Font.Charset="1" Font.Color="-16777208" Font.Height="-12" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Tlf: [frxKurum.&#34;TEL&#34;]   Fax: [frxKurum.&#34;FAX&#34;]"/>
+      <TfrxMemoView Name="Memo30" Left="117,76376" Top="113,3859" Width="411,96877" Height="18,89765" DataSet="frxKurum" DataSetName="frxKurum" Font.Charset="1" Font.Color="-16777208" Font.Height="-12" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Adres: [frxKurum.&#34;ADRESI&#34;] [frxKurum.&#34;ILCESI&#34;] [frxKurum.&#34;ILI&#34;]">
+        <Formats>
+          <item/>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxPictureView Name="Picture1" Left="7,55906" Top="60,47248" Width="105,82684" Height="71,81107" DataField="LOGO" DataSet="frxKurum" DataSetName="frxKurum" HightQuality="False" Transparent="False" TransparentColor="16777215"/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="30,23624" Left="0" Top="306,14193" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxUye" DataSetName="frxUye" RowCount="0">
+      <TfrxMemoView Name="Memo1" Left="0,55906" Top="0" Width="26,45669291" Height="30,23624" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" Frame.Typ="8" ParentFont="False" Text="[(&#60;Line&#62;)]"/>
+      <TfrxMemoView Name="Memo12" Left="26,7953" Top="0" Width="75,59055118" Height="30,23624" DataField="KAYIT_TARIHI" DataSet="frxUye" DataSetName="frxUye" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" Frame.Typ="8" ParentFont="False" Text="[frxUye.&#34;KAYIT_TARIHI&#34;]"/>
+      <TfrxMemoView Name="Memo13" Left="209,66945" Top="0" Width="94,48818898" Height="30,23624" DataField="TC_KIMLIK_NO" DataSet="frxUye" DataSetName="frxUye" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" Frame.Typ="8" ParentFont="False" Text="[frxUye.&#34;TC_KIMLIK_NO&#34;]"/>
+      <TfrxMemoView Name="Memo14" Left="103,28355" Top="0" Width="105,82677165" Height="30,23624" DataField="ADI_SOYADI" DataSet="frxUye" DataSetName="frxUye" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" Frame.Typ="8" ParentFont="False" Text="[frxUye.&#34;ADI_SOYADI&#34;]"/>
+      <TfrxMemoView Name="Memo15" Left="415,55937" Top="0" Width="49,13385827" Height="30,23624" DataField="OGRENCI_NO" DataSet="frxUye" DataSetName="frxUye" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" Frame.Typ="8" ParentFont="False" Text="[frxUye.&#34;OGRENCI_NO&#34;]"/>
+      <TfrxMemoView Name="Memo16" Left="465,14997" Top="0" Width="75,5905511811024" Height="30,23624" DataField="CEP_TEL" DataSet="frxUye" DataSetName="frxUye" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" Frame.Typ="8" ParentFont="False" Text="[frxUye.&#34;CEP_TEL&#34;]"/>
+      <TfrxMemoView Name="Memo17" Left="304,83488" Top="0" Width="75,59055118" Height="30,23624" DataField="GOREVI" DataSet="frxUye" DataSetName="frxUye" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" Frame.Typ="8" ParentFont="False" Text="[frxUye.&#34;GOREVI&#34;]"/>
+      <TfrxMemoView Name="Memo18" Left="381,20501" Top="0" Width="34,01574803" Height="30,23624" DataField="SINIFI" DataSet="frxUye" DataSetName="frxUye" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" Frame.Typ="8" ParentFont="False" Text="[frxUye.&#34;SINIFI&#34;]"/>
+      <TfrxMemoView Name="Memo19" Left="541,40198" Top="0" Width="52,91338583" Height="30,23624" DataField="CINSIYET" DataSet="frxUye" DataSetName="frxUye" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" Frame.Typ="8" ParentFont="False" Text="[frxUye.&#34;CINSIYET&#34;]"/>
+      <TfrxMemoView Name="Memo20" Left="594,65399" Top="0" Width="124,72436795" Height="30,23624" DataField="ADRES" DataSet="frxUye" DataSetName="frxUye" Font.Charset="1" Font.Color="-16777208" Font.Height="-11" Font.Name="Tahoma" Font.Style="0" Frame.Typ="8" ParentFont="False" Text="[frxUye.&#34;ADRES&#34;]"/>
+    </TfrxMasterData>
+    <TfrxHeader Name="Header1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="64,25201" Left="0" Top="219,21274" Width="718,1107">
+      <TfrxMemoView Name="Memo22" Left="0" Top="26" Width="718,1107" Height="34,01577" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Fill.BackColor="16777173" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo2" Left="0,55906" Top="25,22047" Width="26,45669291" Height="34,01577" Font.Charset="1" Font.Color="-16777208" Font.Height="-12" Font.Name="Tahoma" Font.Style="1" Frame.Typ="8" ParentFont="False" VAlign="vaCenter" Text="S.N"/>
+      <TfrxMemoView Name="Memo3" Left="26,7953" Top="25,22047" Width="75,59055118" Height="34,01577" Font.Charset="1" Font.Color="-16777208" Font.Height="-12" Font.Name="Tahoma" Font.Style="1" Frame.Typ="8" ParentFont="False" VAlign="vaCenter" Text="Kayıt Tarihi"/>
+      <TfrxMemoView Name="Memo4" Left="209,66945" Top="25,22047" Width="94,48818898" Height="34,01577" Font.Charset="1" Font.Color="-16777208" Font.Height="-12" Font.Name="Tahoma" Font.Style="1" Frame.Typ="8" ParentFont="False" VAlign="vaCenter" Text="TC Kimlik No"/>
+      <TfrxMemoView Name="Memo5" Left="103,28355" Top="25,22047" Width="105,82677165" Height="34,01577" Font.Charset="1" Font.Color="-16777208" Font.Height="-12" Font.Name="Tahoma" Font.Style="1" Frame.Typ="8" ParentFont="False" VAlign="vaCenter" Text="Adı Soyadı"/>
+      <TfrxMemoView Name="Memo6" Left="415,55937" Top="25,22047" Width="49,13385827" Height="34,01577" Font.Charset="1" Font.Color="-16777208" Font.Height="-12" Font.Name="Tahoma" Font.Style="1" Frame.Typ="8" ParentFont="False" VAlign="vaCenter" Text="Öğr.No"/>
+      <TfrxMemoView Name="Memo7" Left="465,14997" Top="25,22047" Width="75,59055118" Height="34,01577" Font.Charset="1" Font.Color="-16777208" Font.Height="-12" Font.Name="Tahoma" Font.Style="1" Frame.Typ="8" ParentFont="False" VAlign="vaCenter" Text="Cep Tel."/>
+      <TfrxMemoView Name="Memo8" Left="304,83488" Top="25,22047" Width="75,59055118" Height="34,01577" Font.Charset="1" Font.Color="-16777208" Font.Height="-12" Font.Name="Tahoma" Font.Style="1" Frame.Typ="8" ParentFont="False" VAlign="vaCenter" Text="Görevi"/>
+      <TfrxMemoView Name="Memo9" Left="381,20501" Top="25,22047" Width="34,01574803" Height="34,01577" Font.Charset="1" Font.Color="-16777208" Font.Height="-12" Font.Name="Tahoma" Font.Style="1" Frame.Typ="8" ParentFont="False" VAlign="vaCenter" Text="Sınıfı"/>
+      <TfrxMemoView Name="Memo10" Left="541,40198" Top="25,22047" Width="52,91338339" Height="34,01577" Font.Charset="1" Font.Color="-16777208" Font.Height="-12" Font.Name="Tahoma" Font.Style="1" Frame.Typ="8" ParentFont="False" VAlign="vaCenter" Text="Cinsiyet"/>
+      <TfrxMemoView Name="Memo11" Left="594,65399" Top="25,22047" Width="124,72436795" Height="34,01577" Font.Charset="1" Font.Color="-16777208" Font.Height="-12" Font.Name="Tahoma" Font.Style="1" Frame.Typ="8" ParentFont="False" VAlign="vaCenter" Text="Adresi"/>
+    </TfrxHeader>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="396,85065" Width="718,1107">
+      <TfrxMemoView Name="Memo26" Left="0" Top="0" Width="718,1107" Height="18,89765" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Fill.BackColor="16777173" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo23" Left="219,7718" Top="0" Width="302,3624" Height="18,89765" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="Sayfa [Page#] / [TotalPages#]"/>
+      <TfrxMemoView Name="Memo25" Left="0" Top="0" Width="219,21274" Height="18,89765" Font.Charset="1" Font.Color="536870911" Font.Height="-11" Font.Name="tahoma" Font.Style="0" Frame.Color="536870911" Frame.Typ="8" Frame.Width="2" ParentFont="False" Text="Kayıt Sayısı: [COUNT(MasterData1)]"/>
+    </TfrxPageFooter>
+  </TfrxReportPage>
+</TfrxReport>
